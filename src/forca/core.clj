@@ -28,10 +28,10 @@
 	          (if (hit? kick word)
 	          	(do 
 	          		(println "Acertou a letra")
-	          		(game-play life word (conj hits kick)))
+	          		(recur life word (conj hits kick)))
 		     	 (do
 		     	 	(println "Errou a letra! Perdeu vida!")
-		            (game-play (dec life) word hits))))))
+		            (recur (dec life) word hits))))))
 
 (defn -main
   "I don't do a whole lot ... yet."
