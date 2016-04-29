@@ -1,36 +1,14 @@
 # forca
 
-FIXME: description
+Jogo da Forca
+Game of Forca
 
 ## Installation
+Install Leinigen
 
-Download from http://example.com/FIXME.
+Download from http://leiningen.org/#install.
 
 ## Usage
+entre na pasta do projeto
+e digite lein repl para iniciar o jogo
 
-FIXME: explanation
-
-    $ java -jar forca-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
