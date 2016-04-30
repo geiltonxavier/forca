@@ -2,6 +2,7 @@
   (:gen-class))
 
 (def total-lives 6)
+(def secret-word "MELANCIA")
 
 (defn lost [] (print "Você Perdeu!"))
 (defn win [] (print "Você Venceu!"))
@@ -18,8 +19,17 @@
 
 (defn hit? [kick word] (.contains word kick))
 
+(defn printing-forca [life word hits]
+    (println : "Vidas " life)
+    (doseq [letter (seq word)]
+        (if (contains? hit (str letter))
+            (print letter " ") (print "_" " ")))
+    (println))
+
+(defn starting-game [] (game-play total-lives secret-word #{}))
 
 (defn game-play [life word hits]
+	(printing-forca life word hits)
 	(cond
 	    ( = life 0) (lost)
 	    (hit-every-word? word hits)(win)
@@ -33,7 +43,5 @@
 		     	 	(println "Errou a letra! Perdeu vida!")
 		            (recur (dec life) word hits))))))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn -main [& args
+(starting-game) )
